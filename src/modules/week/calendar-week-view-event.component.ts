@@ -5,7 +5,7 @@ import {
   EventEmitter,
   TemplateRef
 } from '@angular/core';
-import { WeekViewEvent } from 'calendar-utils';
+import { WeekViewEvent } from '../../../src/modules/common/calendar-utils';
 
 @Component({
   selector: 'mwl-calendar-week-view-event',

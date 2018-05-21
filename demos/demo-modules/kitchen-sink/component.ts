@@ -21,6 +21,7 @@ import {
   CalendarEventAction,
   CalendarEventTimesChangedEvent
 } from 'angular-calendar';
+import { CalendarEventGroup } from 'src/modules/common/calendar-event-group';
 
 const colors: any = {
   red: {
@@ -104,6 +105,42 @@ export class DemoComponent {
         afterEnd: true
       },
       draggable: true
+    }
+  ];
+
+  groups: CalendarEventGroup[] = [
+    {
+      name: 'First Group',
+      events: [
+        {
+          start: addHours(startOfDay(new Date()), 2),
+          end: new Date(),
+          title: 'A draggable and resizable event',
+          color: colors.yellow,
+          actions: this.actions,
+          resizable: {
+            beforeStart: true,
+            afterEnd: true
+          }
+        }
+      ]
+    },
+
+    {
+      name: 'Second Group',
+      events: [
+        {
+          start: addHours(startOfDay(new Date()), 1),
+          end: new Date(),
+          title: 'A draggable and resizable event from the second group',
+          color: colors.yellow,
+          actions: this.actions,
+          resizable: {
+            beforeStart: true,
+            afterEnd: true
+          }
+        }
+      ]
     }
   ];
 

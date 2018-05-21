@@ -97,6 +97,7 @@
     *ngSwitchCase="'day'"
     [viewDate]="viewDate"
     [events]="events"
+    [groups]= "groups"
     [refresh]="refresh"
     (eventClicked)="handleEvent('Clicked', $event.event)"
     (eventTimesChanged)="eventTimesChanged($event)">

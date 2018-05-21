@@ -183,7 +183,7 @@
   "dependencies": {
     "angular-draggable-droppable": "^3.0.0",
     "angular-resizable-element": "^3.0.0",
-    "calendar-utils": "^0.1.2",
+    "calendar-utils": "https://github.com/heightpi/calendar-utils",
     "date-fns": "^1.28.5",
     "positioning": "^1.3.1"
   },

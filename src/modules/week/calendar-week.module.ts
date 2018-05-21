@@ -15,7 +15,7 @@ export {
   WeekViewEvent as CalendarWeekViewEvent,
   WeekViewEventRow as CalendarWeekViewEventRow,
   GetWeekViewArgs as CalendarGetWeekViewArgs
-} from 'calendar-utils';
+} from '../../../src/modules/common/calendar-utils';
 
 @NgModule({
   imports: [

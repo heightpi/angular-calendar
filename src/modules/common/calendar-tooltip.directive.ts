@@ -16,7 +16,7 @@ import {
 } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 import { Positioning } from 'positioning';
-import { CalendarEvent } from 'calendar-utils';
+import { CalendarEvent } from '../../../src/modules/common/calendar-utils';
 
 @Component({
   template: `

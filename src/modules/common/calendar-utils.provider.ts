@@ -9,13 +9,15 @@ import {
   getWeekView,
   GetWeekViewArgs,
   getDayView,
+  getGroupDayView,
   GetDayViewArgs,
+  GetGroupDayViewArgs,
   DayView,
   getDayViewHourGrid,
   GetDayViewHourGridArgs,
   DayViewHour,
   WeekView
-} from 'calendar-utils';
+} from './calendar-utils';
 
 @Injectable()
 export class CalendarUtils {
@@ -33,6 +35,10 @@ export class CalendarUtils {
 
   getDayView(args: GetDayViewArgs): DayView {
     return getDayView(args);
+  }
+
+  getGroupDayView(args: GetGroupDayViewArgs): DayView {
+    return getGroupDayView(args);
   }
 
   getDayViewHourGrid(args: GetDayViewHourGridArgs): DayViewHour[] {

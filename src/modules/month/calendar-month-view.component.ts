@@ -17,7 +17,7 @@ import {
   MonthView,
   MonthViewDay,
   ViewPeriod
-} from 'calendar-utils';
+} from '../../../src/modules/common/calendar-utils';
 import { Subject, Subscription } from 'rxjs';
 import isSameDay from 'date-fns/is_same_day/index';
 import setDate from 'date-fns/set_date/index';

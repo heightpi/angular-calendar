@@ -5,7 +5,10 @@ import {
   EventEmitter,
   TemplateRef
 } from '@angular/core';
-import { MonthViewDay, CalendarEvent } from 'calendar-utils';
+import {
+  MonthViewDay,
+  CalendarEvent
+} from '../../../src/modules/common/calendar-utils';
 import { trackByEventId } from '../common/util';
 
 @Component({

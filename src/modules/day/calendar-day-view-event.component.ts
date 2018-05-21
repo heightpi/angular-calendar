@@ -5,7 +5,7 @@ import {
   EventEmitter,
   TemplateRef
 } from '@angular/core';
-import { DayViewEvent } from 'calendar-utils';
+import { DayViewEvent } from '../../../src/modules/common/calendar-utils';
 
 @Component({
   selector: 'mwl-calendar-day-view-event',
